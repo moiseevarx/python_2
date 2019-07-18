@@ -1,4 +1,9 @@
 Hello world!
+Some string
+Another text
 Hello world!
+Some string
+Another text
 Hello world!
-Hello world!
+Some string
+Another text
