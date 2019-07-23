@@ -1,4 +1,4 @@
-import json
+import yaml
 from socket import *
 from argparse import ArgumentParser
 
@@ -29,14 +29,14 @@ try:
     sock.bind((host, port))
     sock.listen(5)
 
-    print(f'Server started with { host }:{ port }')
+    print(f'Server started with {host}:{port}')
 
     while True:
         client, address = sock.accept()
-        print(f'Client was detected { address[0] }:{ address[1] }')
+        print(f'Client was detected {address[0]}:{address[1]}')
 
         b_request = client.recv(config.get('buffersize'))
-        print(f'Client send message { b_request.decode() }')
+        print(f'Client send message {b_request.decode()}')
 
         client.send(b_request)
         client.close()

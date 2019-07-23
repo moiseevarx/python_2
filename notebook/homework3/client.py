@@ -36,10 +36,10 @@ try:
 
     with open('data.json') as file:
         sock.send(file.read().encode())
-        print(f'Client send data { file }')
+        print(f'Client send data {file}')
 
     b_response = sock.recv(config.get('buffersize'))
-    print(f'Server send data { b_response.decode() }')
+    print(f'Server send data {b_response.decode()}')
 
 except KeyboardInterrupt:
     print('Client shutdown.')
