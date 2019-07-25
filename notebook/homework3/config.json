@@ -1,0 +1,4 @@
+{
+  "action": "authenticate",
+  "time": <unix timestamp>
+}
